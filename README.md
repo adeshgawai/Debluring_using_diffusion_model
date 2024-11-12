@@ -54,12 +54,9 @@ Run the following scripts. The training configuration is in options/train/
 
 - Download the pre-trained [models]() and place them in `experiments/pretrained_models/`.
 
-- Download [test](https://drive.google.com/file/d/1pUFsJQleqCGTeeHnsSukJU0oSbjjWIJP/view?usp=drive_link) (GoPro, HIDE, RealBlur) datasets, place them in `datasets/`.
+- Download [test](https://drive.google.com/file/d/1pUFsJQleqCGTeeHnsSukJU0oSbjjWIJP/view?usp=drive_link) (GoPro)) datasets, place them in `datasets/`.
 
 - Run the following scripts. The testing configuration is in `options/test/`.
-
-  Synthetic, reproduces results in Table 2 of the main paper
-
   ```python
   # generate images
   python test.py -opt options/test/GoPro.yml
@@ -73,15 +70,11 @@ Run the following scripts. The training configuration is in options/train/
 # test PSNR/SSIM
 python evaluate_gopro.py
 ```
+## Results
+We achieved state-of-the-art performance on synthetic and real-world blur dataset.
 
-# image_editing
-### Training
-![Screenshot from 2024-11-11 06-36-21](https://github.com/user-attachments/assets/0a16d6ec-8b9f-4df0-9d1d-ab5ab343bc25) ![Screenshot from 2024-11-11 06-36-53](https://github.com/user-attachments/assets/80d3451d-acad-42c9-8fc6-1791cede9118)
-
-### Evaluate
 ![Screenshot from 2024-11-10 23-45-27](https://github.com/user-attachments/assets/6fab7cb5-6ffe-4a02-88c7-9dd368b2fd86)
 
-### Test on Images
 ![image](https://github.com/user-attachments/assets/bc0ae3db-a0ff-498f-b31e-06b656c8f467)
 
 ![image](https://github.com/user-attachments/assets/dcd4f566-e7c9-4b6d-a32d-b0f20a9460b5)
