@@ -19,21 +19,19 @@ To set up this project, you need the following dependencies:
 ### Steps to Install:
 
 1. Create and activate a new *conda environment*:
-   bash'''
-      !conda create -n hi_diff python=3.9
-      !conda activate hi_diff
-   
+   ```bah
+   !git clone https://github.com/rohitrrg/image_editing.git
+   !cd image_editing
+   !conda create -n hi_diff python=3.9
+   !conda activate hi_diff
+   !pip install -r requirements.txt
+   ```
 
 ### Dataset
 
 This project uses the **GoPro Dataset** for training the deblurring model.
 
-You can download the dataset using the following command:
-
-bash
-   !gdown 1KYmgaQj0LWSCL6ygtXcuBZ6DfJgO09RQ
-   !unzip GoPro.zip
-   !rm GoPro.zip
+You can download the dataset from : [Google Drive](https://drive.google.com/file/d/1KYmgaQj0LWSCL6ygtXcuBZ6DfJgO09RQ/view?usp=drive_link)
 
 # image_editing
 ### Training
