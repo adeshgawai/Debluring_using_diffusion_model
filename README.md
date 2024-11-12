@@ -48,6 +48,31 @@ Run the following scripts. The training configuration is in options/train/
   python train.py -opt options/train/GoPro_S1.yml --launcher pytorch
   python train.py -opt options/train/GoPro_S2.yml --launcher pytorch
 ```
+- The training experiment is in `experiments/`.
+
+## Testing
+
+- Download the pre-trained [models]() and place them in `experiments/pretrained_models/`.
+
+- Download [test](https://drive.google.com/file/d/1pUFsJQleqCGTeeHnsSukJU0oSbjjWIJP/view?usp=drive_link) (GoPro, HIDE, RealBlur) datasets, place them in `datasets/`.
+
+- Run the following scripts. The testing configuration is in `options/test/`.
+
+  Synthetic, reproduces results in Table 2 of the main paper
+
+  ```python
+  # generate images
+  python test.py -opt options/test/GoPro.yml
+  ```
+
+## Evaluation
+
+- Run the following script for Evaluating the predictions on test dataset
+
+```python
+# test PSNR/SSIM
+python evaluate_gopro.py
+```
 
 # image_editing
 ### Training
