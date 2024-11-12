@@ -35,7 +35,7 @@ You can download the dataset from : [Google Drive](https://drive.google.com/file
 
 ## Training
 
-- Download [GoPro](https://drive.google.com/file/d/1KYmgaQj0LWSCL6ygtXcuBZ6DfJgO09RQ/view?usp=drive_link) dataset, place them in `datasets/`.
+- Download GoPro dataset, place them in `datasets/`.
 - Download [pre-trained models](https://drive.google.com/file/d/1g4aKgt_eMqGcIKqj-NiFLR80tY510KZr/view?usp=drive_link) and place it in `experiments/`.
 
 - Generate image patches from GoPro dataset for training.
