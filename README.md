@@ -36,7 +36,7 @@ You can download the dataset from : [Google Drive](https://drive.google.com/file
 ## Training
 
 - Download [GoPro](https://drive.google.com/file/d/1KYmgaQj0LWSCL6ygtXcuBZ6DfJgO09RQ/view?usp=drive_link) dataset, place them in `datasets/`.
-   Stage-1 (S1) [pre-trained models](https://drive.google.com/file/d/1g4aKgt_eMqGcIKqj-NiFLR80tY510KZr/view?usp=drive_link) on GoPro are provided. The stage-2 (S2) can be trained directly.
+- Stage-1 (S1) [pre-trained models](https://drive.google.com/file/d/1g4aKgt_eMqGcIKqj-NiFLR80tY510KZr/view?usp=drive_link) on GoPro are provided. The stage-2 (S2) can be trained directly.
 
 - Generate image patches from GoPro dataset for training.
 
