@@ -45,7 +45,6 @@ You can download the dataset from : [Google Drive](https://drive.google.com/file
 Run the following scripts. The training configuration is in options/train/ 
 ```shell
   # GoPro, 2 Stages
-  python train.py -opt options/train/GoPro_S1.yml --launcher pytorch
   python train.py -opt options/train/GoPro_S2.yml --launcher pytorch
 ```
 - The training experiment is in `experiments/`.
