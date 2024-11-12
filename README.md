@@ -16,7 +16,7 @@ To set up this project, you need the following dependencies:
 - *PyTorch 2.0.0*  
 - *NVIDIA GPU + CUDA* (for faster computation)
 
-### Steps to Install:
+## Steps to Install:
 
 1. Create and activate a new *conda environment*:
    ```bah
@@ -27,11 +27,27 @@ To set up this project, you need the following dependencies:
    !pip install -r requirements.txt
    ```
 
-### Dataset
+## Dataset
 
 This project uses the **GoPro Dataset** for training the deblurring model.
 
 You can download the dataset from : [Google Drive](https://drive.google.com/file/d/1KYmgaQj0LWSCL6ygtXcuBZ6DfJgO09RQ/view?usp=drive_link)
+
+## Training
+
+- Download [GoPro](https://drive.google.com/file/d/1KYmgaQj0LWSCL6ygtXcuBZ6DfJgO09RQ/view?usp=drive_link) dataset, place them in `datasets/`.
+
+- Generate image patches from GoPro dataset for training.
+
+  ```python
+  python generate_patches_gopro.py 
+  ```
+Run the following scripts. The training configuration is in options/train/ 
+```shell
+  # GoPro, 2 Stages
+  python train.py -opt options/train/GoPro_S1.yml --launcher pytorch
+  python train.py -opt options/train/GoPro_S2.yml --launcher pytorch
+```
 
 # image_editing
 ### Training
