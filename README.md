@@ -19,10 +19,10 @@ To set up this project, you need the following dependencies:
 ### Steps to Install:
 
 1. Create and activate a new *conda environment*:
-   '''
-   !conda create -n hi_diff python=3.9
-   !conda activate hi_diff
-   '''
+   bash
+      !conda create -n hi_diff python=3.9
+      !conda activate hi_diff
+   
 
 ### Dataset
 
